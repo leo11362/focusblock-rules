@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "_aide": [
     "Règles du MODE MESSAGERIE SEULEMENT. Modifiable sans toucher au code Kotlin.",
     "mode 'blocklist' : on agit si un élément de 'blocked' est visible (et aucun de 'allowed').",
@@ -21,7 +21,7 @@
         "https://www.instagram.com/direct/inbox/"
       ],
       "mode": "blocklist",
-      "onViolation": "back",
+      "onViolation": "block",
       "blocked": {
         "_note": "Reels (lecteur), Stories (lecteur + bandeau du fil), Explorer. À VÉRIFIER avec le mode debug.",
         "viewIds": [
@@ -49,7 +49,7 @@
         "tiktok://inbox"
       ],
       "mode": "blocklist",
-      "onViolation": "back",
+      "onViolation": "block",
       "blocked": {
         "_note": "Onglets du fil vidéo (en haut de l'écran Accueil). À VÉRIFIER avec le mode debug.",
         "viewIds": [],
@@ -70,7 +70,7 @@
         "snapchat://chat"
       ],
       "mode": "blocklist",
-      "onViolation": "back",
+      "onViolation": "block",
       "blocked": {
         "_note": "À REMPLIR avec le mode debug : un viewId propre à l'écran Spotlight et un à l'écran Stories (PAS les boutons de la barre du bas, visibles aussi dans le Chat). Puis passe 'enabled' à true.",
         "viewIds": [],
