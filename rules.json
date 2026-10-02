@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "_aide": [
     "Règles du MODE MESSAGERIE SEULEMENT. Modifiable sans toucher au code Kotlin.",
     "mode 'blocklist' : on agit si un élément de 'blocked' est visible (et aucun de 'allowed').",
@@ -9,16 +9,19 @@
     "IMPORTANT : les identifiants ci-dessous sont des points de départ. Les apps les changent souvent :",
     "vérifie-les avec le mode debug (Réglages > Mode debug) avant de compter dessus.",
     "Pour tester sans recompiler : adb push rules.json /sdcard/Android/data/com.focusblock/files/rules.json",
-    "puis Réglages > Recharger les règles."
+    "puis Réglages > Recharger les règles.",
+    "messagingButton : bouton qui mène aux messages. Si l'app s'ouvre sur l'accueil, FocusBlock appuie dessus tout seul (v1.4+)."
   ],
   "apps": [
     {
       "name": "Instagram",
       "enabled": true,
-      "packages": ["com.instagram.android"],
+      "packages": [
+        "com.instagram.android"
+      ],
       "messagingDeepLinks": [
-        "instagram://direct_inbox",
-        "https://www.instagram.com/direct/inbox/"
+        "https://www.instagram.com/direct/inbox/",
+        "instagram://direct-inbox"
       ],
       "mode": "blocklist",
       "onViolation": "block",
@@ -38,12 +41,30 @@
         "viewIds": [],
         "texts": [],
         "contentDescriptions": []
+      },
+      "messagingButton": {
+        "_note": "Icône avion en papier / onglet Messages. À VÉRIFIER avec le mode debug (marqué 💬).",
+        "viewIds": [
+          "com.instagram.android:id/action_bar_inbox_button",
+          "com.instagram.android:id/direct_tab"
+        ],
+        "texts": [],
+        "contentDescriptions": [
+          "Messenger",
+          "Messages",
+          "Message",
+          "Direct",
+          "Messagerie"
+        ]
       }
     },
     {
       "name": "TikTok",
       "enabled": true,
-      "packages": ["com.zhiliaoapp.musically", "com.ss.android.ugc.trill"],
+      "packages": [
+        "com.zhiliaoapp.musically",
+        "com.ss.android.ugc.trill"
+      ],
       "messagingDeepLinks": [
         "snssdk1233://inbox",
         "tiktok://inbox"
@@ -53,19 +74,43 @@
       "blocked": {
         "_note": "Onglets du fil vidéo (en haut de l'écran Accueil). À VÉRIFIER avec le mode debug.",
         "viewIds": [],
-        "texts": ["For You", "Pour toi", "Following", "Abonnements", "Explore", "Explorer", "LIVE"],
+        "texts": [
+          "For You",
+          "Pour toi",
+          "Following",
+          "Abonnements",
+          "Explore",
+          "Explorer",
+          "LIVE"
+        ],
         "contentDescriptions": []
       },
       "allowed": {
         "viewIds": [],
         "texts": [],
         "contentDescriptions": []
+      },
+      "messagingButton": {
+        "_note": "Onglet Boîte de réception. À VÉRIFIER avec le mode debug (marqué 💬).",
+        "viewIds": [],
+        "texts": [
+          "Inbox",
+          "Boîte de réception",
+          "Messages"
+        ],
+        "contentDescriptions": [
+          "Inbox",
+          "Boîte de réception",
+          "Messages"
+        ]
       }
     },
     {
       "name": "Snapchat",
       "enabled": false,
-      "packages": ["com.snapchat.android"],
+      "packages": [
+        "com.snapchat.android"
+      ],
       "messagingDeepLinks": [
         "snapchat://chat"
       ],
@@ -78,6 +123,11 @@
         "contentDescriptions": []
       },
       "allowed": {
+        "viewIds": [],
+        "texts": [],
+        "contentDescriptions": []
+      },
+      "messagingButton": {
         "viewIds": [],
         "texts": [],
         "contentDescriptions": []
