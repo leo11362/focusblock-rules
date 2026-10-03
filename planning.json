@@ -1,0 +1,237 @@
+{
+  "version": 1,
+  "name": "Emploi du temps EcoleDirecte (semaines A/B)",
+  "_aide": [
+    "weeks : 'all' = toutes les semaines, 'A' ou 'B' = une semaine sur deux.",
+    "weekAIsEven : true = les semaines paires (40, 42…) sont des semaines A.",
+    "Après une modification ici : FocusBlock > Planning > ⋮ > Importer l'emploi du temps."
+  ],
+  "weekAIsEven": true,
+  "slots": [
+    {
+      "title": "Anglais · A13",
+      "day": 1,
+      "start": "07:55",
+      "end": "08:50",
+      "type": "COURS",
+      "color": "#8AA4FF",
+      "weeks": "all"
+    },
+    {
+      "title": "Histoire-Géo · B1",
+      "day": 1,
+      "start": "08:50",
+      "end": "09:45",
+      "type": "COURS",
+      "color": "#FFE36B",
+      "weeks": "all"
+    },
+    {
+      "title": "Arts appliqués · B1",
+      "day": 1,
+      "start": "10:00",
+      "end": "10:55",
+      "type": "COURS",
+      "color": "#5EE6A8",
+      "weeks": "all"
+    },
+    {
+      "title": "Physique-Chimie · C14",
+      "day": 1,
+      "start": "10:55",
+      "end": "11:50",
+      "type": "COURS",
+      "color": "#FFB86B",
+      "weeks": "A"
+    },
+    {
+      "title": "Enseignement pro · SEN",
+      "day": 1,
+      "start": "13:00",
+      "end": "16:55",
+      "type": "COURS",
+      "color": "#A5ABB8",
+      "weeks": "all"
+    },
+    {
+      "title": "Soutien au parcours · A24",
+      "day": 2,
+      "start": "07:55",
+      "end": "08:50",
+      "type": "COURS",
+      "color": "#A5ABB8",
+      "weeks": "A"
+    },
+    {
+      "title": "Français · A24",
+      "day": 2,
+      "start": "07:55",
+      "end": "08:50",
+      "type": "COURS",
+      "color": "#6BD4FF",
+      "weeks": "B"
+    },
+    {
+      "title": "Français · A24",
+      "day": 2,
+      "start": "08:50",
+      "end": "09:45",
+      "type": "COURS",
+      "color": "#6BD4FF",
+      "weeks": "all"
+    },
+    {
+      "title": "Anglais · A24",
+      "day": 2,
+      "start": "10:00",
+      "end": "10:55",
+      "type": "COURS",
+      "color": "#8AA4FF",
+      "weeks": "all"
+    },
+    {
+      "title": "Maths · A24",
+      "day": 2,
+      "start": "10:55",
+      "end": "11:50",
+      "type": "COURS",
+      "color": "#FF6B9A",
+      "weeks": "all"
+    },
+    {
+      "title": "Religion · A24",
+      "day": 2,
+      "start": "13:00",
+      "end": "13:50",
+      "type": "COURS",
+      "color": "#A5ABB8",
+      "weeks": "A"
+    },
+    {
+      "title": "PSE · A23",
+      "day": 2,
+      "start": "13:55",
+      "end": "14:50",
+      "type": "COURS",
+      "color": "#A5ABB8",
+      "weeks": "A"
+    },
+    {
+      "title": "Histoire-Géo · B11",
+      "day": 2,
+      "start": "14:50",
+      "end": "15:45",
+      "type": "COURS",
+      "color": "#FFE36B",
+      "weeks": "all"
+    },
+    {
+      "title": "EPS · Gymnase",
+      "day": 2,
+      "start": "16:00",
+      "end": "17:50",
+      "type": "COURS",
+      "color": "#B98AFF",
+      "weeks": "all"
+    },
+    {
+      "title": "Enseignement pro · SEN",
+      "day": 3,
+      "start": "13:00",
+      "end": "15:45",
+      "type": "COURS",
+      "color": "#A5ABB8",
+      "weeks": "all"
+    },
+    {
+      "title": "Réalisation projet · SEN",
+      "day": 3,
+      "start": "16:00",
+      "end": "16:55",
+      "type": "COURS",
+      "color": "#A5ABB8",
+      "weeks": "all"
+    },
+    {
+      "title": "Maths · A24",
+      "day": 4,
+      "start": "10:55",
+      "end": "11:50",
+      "type": "COURS",
+      "color": "#FF6B9A",
+      "weeks": "all"
+    },
+    {
+      "title": "Économie-gestion · A24",
+      "day": 4,
+      "start": "13:00",
+      "end": "13:50",
+      "type": "COURS",
+      "color": "#A5ABB8",
+      "weeks": "all"
+    },
+    {
+      "title": "Soutien au parcours · B1",
+      "day": 4,
+      "start": "13:55",
+      "end": "14:50",
+      "type": "COURS",
+      "color": "#A5ABB8",
+      "weeks": "all"
+    },
+    {
+      "title": "Maths · A24",
+      "day": 4,
+      "start": "14:50",
+      "end": "15:45",
+      "type": "COURS",
+      "color": "#FF6B9A",
+      "weeks": "A"
+    },
+    {
+      "title": "Anglais · A24",
+      "day": 4,
+      "start": "14:50",
+      "end": "15:45",
+      "type": "COURS",
+      "color": "#8AA4FF",
+      "weeks": "B"
+    },
+    {
+      "title": "Enseignement pro · SEN",
+      "day": 5,
+      "start": "07:55",
+      "end": "11:50",
+      "type": "COURS",
+      "color": "#A5ABB8",
+      "weeks": "all"
+    },
+    {
+      "title": "PSE · A22",
+      "day": 5,
+      "start": "13:00",
+      "end": "13:50",
+      "type": "COURS",
+      "color": "#A5ABB8",
+      "weeks": "all"
+    },
+    {
+      "title": "Français · A24",
+      "day": 5,
+      "start": "13:55",
+      "end": "14:50",
+      "type": "COURS",
+      "color": "#6BD4FF",
+      "weeks": "all"
+    },
+    {
+      "title": "Physique-Chimie · C14",
+      "day": 5,
+      "start": "14:50",
+      "end": "15:45",
+      "type": "COURS",
+      "color": "#FFB86B",
+      "weeks": "all"
+    }
+  ]
+}
